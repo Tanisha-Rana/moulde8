@@ -241,7 +241,7 @@ Route::get('photographer/login', [PhotographerLoginController::class, 'login']);
 Route::post('photographer/login', [PhotographerLoginController::class, 'loginVerify']);
 Route::get('photographer/logout', [PhotographerLoginController::class, 'logout']);
 
-Route::prefix('photographer')->middleware('photographer.auth')->group(function () {
+Route::prefix('photographer')->group(function () {
     Route::get('/dashboard', [PhotographerDashboardController::class, 'index']);
     Route::get('/appointments', [PhotographerDashboardController::class, 'appointments']);
     Route::get('/bookings', [PhotographerDashboardController::class, 'bookings']);
