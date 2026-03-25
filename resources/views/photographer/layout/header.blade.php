@@ -242,9 +242,8 @@ li.active .arrow{
     </div>
 
     <ul><li><a href="{{ url('photographer/dashboard') }}" class="{{ Request::is('photographer/dashboard') ? 'active' : '' }}">Dashboard</a></li></ul>
-    <ul><li><a href="{{ url('photographer/appointments') }}" class="{{ Request::is('photographer/appointments') ? 'active' : '' }}">My Appointments</a></li></ul>
     <ul><li><a href="{{ url('photographer/bookings') }}" class="{{ Request::is('photographer/bookings') ? 'active' : '' }}">My Bookings</a></li></ul>
-    <ul><li><a href="{{ url('photographer/gallery') }}" class="{{ Request::is('photographer/gallery') ? 'active' : '' }}">My Gallery</a></li></ul>
+    <ul><li><a href="{{ url('photographer/gallery_management') }}" class="{{ Request::is('photographer/gallery_management') ? 'active' : '' }}">Gallery Management</a></li></ul>
     <ul><li><a href="{{ url('photographer/slots') }}" class="{{ Request::is('photographer/slots') ? 'active' : '' }}">Manage My Slots</a></li></ul>
     <ul><li><a href="{{ url('photographer/private-gallery') }}" class="{{ Request::is('photographer/private-gallery') ? 'active' : '' }}">Private Client Gallery</a></li></ul>
     <ul><li><a href="{{ url('photographer/notifications') }}" class="{{ Request::is('photographer/notifications') ? 'active' : '' }}">Notifications</a></li></ul>

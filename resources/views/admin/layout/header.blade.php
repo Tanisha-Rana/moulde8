@@ -260,6 +260,7 @@ li.active .arrow{
     <ul><li><a href="photographer_management">Photographer Management</a></li></ul>
     <ul><li><a href="videographer_management">Videographer Management</a></li></ul>
     <ul><li><a href="editor_management">Editor Management</a></li></ul>
+    <ul><li><a href="assigned_tasks_management">Assigned Tasks Management</a></li></ul>
     <ul><li><a href="client_management">Client Management</a></li></ul>
     <ul><li><a href="categories_management">Categories Management</a></li></ul>
     <ul><li><a href="catelogues_management">Catalogues Management</a></li></ul>

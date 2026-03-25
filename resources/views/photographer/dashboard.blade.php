@@ -85,17 +85,8 @@
     <h3 class="mb-1">Photographer Dashboard</h3>
     <p class="text-muted mb-4">Photography By Monali – Photographer Panel</p>
 
-   <div class="row g-4">
-    <div class="col-md-3">
-        <div class="dashboard-card">
-            <div class="dashboard-icon icon-booking">
-                <i class="fa fa-calendar-check"></i>
-            </div>
-            <h6>My Appointments</h6>
-            <h2>{{ $stats['total_appointments'] ?? 0 }}</h2>
-        </div>
-    </div>
-    <div class="col-md-3">
+    <div class="row g-4">
+    <div class="col-md-4">
         <div class="dashboard-card">
             <div class="dashboard-icon icon-booking">
                 <i class="fa fa-camera"></i>
@@ -104,7 +95,7 @@
             <h2>{{ $stats['total_bookings'] ?? 0 }}</h2>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
         <div class="dashboard-card">
             <div class="dashboard-icon icon-gallery">
                 <i class="fa fa-image"></i>
@@ -113,7 +104,7 @@
             <h2>{{ $stats['total_gallery'] ?? 0 }}</h2>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
         <div class="dashboard-card">
             <div class="dashboard-icon icon-notification">
                 <i class="fa fa-bell"></i>
@@ -127,7 +118,7 @@
     <div class="mt-5 dashboard-card">
         <h5>Welcome Photographer 👋</h5>
         <p class="mb-0 text-muted">
-            Manage your appointments and gallery items here.
+            Manage your bookings and gallery items here.
         </p>
     </div>
 

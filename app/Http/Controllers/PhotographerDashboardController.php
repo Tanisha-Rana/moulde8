@@ -19,7 +19,6 @@ class PhotographerDashboardController extends Controller
         $photographer_id = Auth::guard('photographer')->id(); 
         
         $stats = [
-            'total_appointments' => Appointment::count(), // Add photographer_id filter if exists
             'total_bookings' => Booking::where('photographer_id', $photographer_id)->count(),
             'total_gallery' => Gallery::count(),
             'total_notifications' => Notification::count()

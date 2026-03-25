@@ -241,10 +241,13 @@ li.active .arrow{
         Editor Panel
     </div>
 
-    <ul><li><a href="{{ url('editor/dashboard') }}" class="active">Dashboard</a></li></ul>
-    <ul><li><a href="{{ url('editor/tasks') }}">My Editing Tasks</a></li></ul>
-    <ul><li><a href="{{ url('editor/gallery') }}">Edited Gallery</a></li></ul>
-    <ul><li><a href="{{ url('editor/notifications') }}">Notifications</a></li></ul>
+    <ul><li><a href="{{ url('editor/dashboard') }}" class="{{ Request::is('editor/dashboard') ? 'active' : '' }}">Dashboard</a></li></ul>
+    <ul><li><a href="{{ url('editor/tasks') }}" class="{{ Request::is('editor/tasks') ? 'active' : '' }}">My Editing Tasks</a></li></ul>
+    <ul><li><a href="{{ url('editor/gallery_management') }}" class="{{ Request::is('editor/gallery_management') ? 'active' : '' }}">Gallery Management</a></li></ul>
+    <ul><li><a href="{{ url('editor/private-gallery') }}" class="{{ Request::is('editor/private-gallery') ? 'active' : '' }}">Private Client Gallery</a></li></ul>
+    <ul><li><a href="{{ url('editor/notifications') }}" class="{{ Request::is('editor/notifications') ? 'active' : '' }}">Notifications</a></li></ul>
+    <ul><li><a href="{{ url('editor/blog_management') }}" class="{{ Request::is('editor/blog_management') ? 'active' : '' }}">Blog Management</a></li></ul>
+    <ul><li><a href="{{ url('editor/feedback_management') }}" class="{{ Request::is('editor/feedback_management') ? 'active' : '' }}">View Feedbacks</a></li></ul>
     
     <div class="mt-4 pt-4 border-top mx-3">
         <a href="{{ url('logout') }}" class="btn btn-outline-danger w-100 rounded-pill py-2 small fw-bold">
